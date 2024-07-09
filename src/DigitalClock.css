@@ -1,0 +1,51 @@
+.digital-clock-container {
+    text-align: center;
+    padding: 40px; /* Increased padding for the box */
+    border-radius: 20px; /* Increased border-radius for the box */
+    background-color: #2303a5; /* Light blue background color */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8); /* Increased shadow effect */
+    position: absolute; /* Position the clock absolutely */
+    top: 50%; /* Align the clock to the middle vertically */
+    left: 50%; /* Align the clock to the middle horizontally */
+    transform: translate(-50%, -50%); /* Center the clock */
+  }
+  
+  .digital-clock-title {
+    font-size: 1.5rem;
+    color: #00bfff; /* Light blue color */
+    margin-bottom: 10px; /* Add margin below the title */
+  }
+  
+  .digital-clock {
+    font-size: 4rem; /* Increased font size for the clock time */
+    color: #41ed08;
+    position: relative;
+    text-shadow: 0 0 20px rgba(152, 255, 152, 0.7); /* Mint glow effect */
+  }
+  
+  
+  .digital-clock:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the pseudo-element */
+    width: calc(100% + 20px); /* Adjust width to cover the clock time and more */
+    height: calc(100% + 20px); /* Adjust height to cover the clock time and more */
+    background: #06a7cb;
+    border-radius: 50%; /* Apply border-radius to create a circle */
+    z-index: -1;
+    filter: blur(20px);
+  }
+  body {
+    background-color: #f08080; /* Light red color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  .digital-clock-header h2 {
+    font-size: 1.5rem;
+    color: #00bfff; /* Bold color */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 10px;
+  }
+  
